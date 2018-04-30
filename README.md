@@ -16,9 +16,9 @@ The primary contribution of this piece of software is to extend the mathematics 
 
 * [Clp](https://projects.coin-or.org/Clp) (for linear programming). This is more of a pain, but only because it isn't as well-documented. In a separate directory ($COINDIR from here on out), install coin-Clp according to the fairly straightforward instructions on the website.
 ### Installation:
-1 Setting up to compile: Edit the `COIN_INC` variable in `src/tf_grasp_quality_compile.sh` to point to the include directory in your Clp installation. My path is there as an example.
-2 Compile and verify: Making sure you've got your TF virtual environment active, `cd` into `src` and run `./tf_grasp_quality_compile.sh`. I'll probably make this a Makefile eventually, but for now, I'm lazy. This should be clean and give you a bunch of files in various states of library and executableness. As a sanity check, run `./grasp_quality_test`. This should also be clean.
-3 Link the dynamic library for Clp: Navigate to the `activate` file of your virtual env and edit it to include the following line
+1. Setting up to compile: Edit the `COIN_INC` variable in `src/tf_grasp_quality_compile.sh` to point to the include directory in your Clp installation. My path is there as an example.
+2. Compile and verify: Making sure you've got your TF virtual environment active, `cd` into `src` and run `./tf_grasp_quality_compile.sh`. I'll probably make this a Makefile eventually, but for now, I'm lazy. This should be clean and give you a bunch of files in various states of library and executableness. As a sanity check, run `./grasp_quality_test`. This should also be clean.
+3. Link the dynamic library for Clp: Navigate to the `activate` file of your virtual env and edit it to include the following line
 
   ```
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$COINDIR/lib/
