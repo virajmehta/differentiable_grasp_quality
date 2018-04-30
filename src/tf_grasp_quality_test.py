@@ -2,7 +2,6 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.python.ops import gradient_checker
 from tf_grasp_quality import grasp_quality
-from ipdb import set_trace as db
 
 vertices_path = 'test_data/teapot_vertices.npy'
 triangles_path = 'test_data/teapot_triangles.npy'
@@ -62,11 +61,9 @@ class GQTest(tf.test.TestCase):
                print(t_grad)
                print('n_grad')
                print(n_grad)
-               db()
 
 if __name__ == '__main__':
     z = GQTest()
     z.testGQ()
-    db()
     z.testGQGrad()
 #    tf.test.main()
