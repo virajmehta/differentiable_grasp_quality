@@ -1,7 +1,7 @@
 TF_INC=$(python3 -c 'import tensorflow as tf; print(tf.sysconfig.get_include())')
 
 echo $TF_INC
-COIN_INC='/cvgl2/u/virajm/DeformNet_tf/tf_ops/coin-Clp/include/coin/'
+COIN_INC='/cvgl2/u/virajm/lib/coin-Clp/include/coin/'
 
 export PKG_CONFIG_PATH='/cvgl2/u/virajm/DeformNet_tf/tf_ops/coin-Clp/lib/pkgconfig/'
 echo $PKG_CONFIG_PATH

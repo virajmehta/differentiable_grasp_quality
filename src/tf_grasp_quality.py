@@ -3,7 +3,7 @@ from tensorflow.python.framework import ops
 try:
     gq_module = tf.load_op_library('tf_grasp_quality_so.so')
 except Exception as e:
-    gq_module = tf.load_op_library('tf_ops/tf_grasp_quality_so.so')
+    gq_module = tf.load_op_library('tf_grasp_quality_so.so')
 _mu = None
 def grasp_quality(grasps, vertices, triangles, normals,
 num_grasp_perturbations=1,
