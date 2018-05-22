@@ -1,6 +1,8 @@
 # Differentiable Grasp Quality Tensorflow Op (dGQ)
 ### Viraj Mehta
 
+## If you use this code or ideas from it in an academic publication, you must cite it somehow.
+
 This is a differentiable grasp quality operation based on an extension from the paper Synthesis of
 force-closure grasps on 3-D objects based on the Q distance.
 
