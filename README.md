@@ -1,7 +1,6 @@
 # Differentiable Grasp Quality Tensorflow Op (dGQ)
 ### Viraj Mehta
 
-## If you use this code or ideas from it in an academic publication, you should try cite it, somehow.
 
 This is a differentiable grasp quality operation based on an extension from the paper Synthesis of
 force-closure grasps on 3-D objects based on the Q distance.
@@ -78,3 +77,5 @@ Another issue is that the code is really convoluted because I wanted to cache ce
 Another issue is that the gradient is just not the same as the numerical gradient. Through much anguish and sleeplessness, I found that this was due to the discontinuous nature of mesh triangles in the numerical gradient computation, and not a huge deal.
 
 Finally, this code is currently pretty committed to the idea of a parallel-jaw gripper. The mathematics is more general and I think it would be a valuable contribution to generalize this to arbitrary fingers. There are a couple problems with this though. First, it's hard to parametrize a multiple-finger grasp. Second, multi-finger grippers have more complicated restrictions to their configuration. I am even more unsure how to either enforce these or pass gradients in these situations, though the math still works in their absence.
+
+## If you use this code or ideas from it in an academic publication, you should try to cite it, somehow.
